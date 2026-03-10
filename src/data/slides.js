@@ -1,0 +1,22 @@
+import slide1 from "../assets/slides/1.jpeg";
+import slide2 from "../assets/slides/2.jpeg";
+import slide3 from "../assets/slides/3.jpeg";
+import slide4 from "../assets/slides/4.jpeg";
+import slide5 from "../assets/slides/5.jpeg";
+import slide6 from "../assets/slides/6.jpeg";
+import slide7 from "../assets/slides/7.jpeg";
+import slide8 from "../assets/slides/8.jpeg";
+import slide9 from "../assets/slides/9.jpeg";
+import slide10 from "../assets/slides/10.jpeg";
+import slide11 from "../assets/slides/11.jpeg";
+import slide12 from "../assets/slides/12.jpeg";
+import slide13 from "../assets/slides/13.jpeg";
+import slide14 from "../assets/slides/14.jpeg";
+import slide15 from "../assets/slides/15.jpeg";
+import slide16 from "../assets/slides/16.jpeg";
+import slide17 from "../assets/slides/17.jpeg";
+import slide18 from "../assets/slides/18.jpeg";
+import slide19 from "../assets/slides/19.jpeg";
+import slide20 from "../assets/slides/20.jpeg";
+
+export const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14, slide15, slide16, slide17, slide18, slide19, slide20];
