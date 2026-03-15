@@ -6,7 +6,9 @@
   box-sizing:border-box;
 }
 
-html,body,#root{
+html,
+body,
+#root{
   margin:0;
   min-height:100%;
 }
@@ -16,6 +18,10 @@ body{
   overflow-x:hidden;
   overflow-y:auto;
 }
+
+/* =========================
+   HERO PAGE
+========================= */
 
 .hero-page{
   position:relative;
@@ -119,6 +125,10 @@ body{
   animation-delay:0.65s;
 }
 
+/* =========================
+   FLOATING ENQUIRY BUTTON
+========================= */
+
 .right-floating-bar{
   position:fixed;
   right:0;
@@ -135,17 +145,24 @@ body{
   color:white;
   border:none;
   border-radius:18px 0 0 18px;
-  padding:20px 12px;
-  min-height:150px;
-  min-width:52px;
+  padding:22px 12px;
+  min-height:170px;
+  min-width:58px;
   font-size:15px;
   font-weight:600;
-  letter-spacing:0.08em;
+  letter-spacing:0.06em;
   line-height:1;
   cursor:pointer;
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
   white-space:nowrap;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
 
 .sound-button{
   position:fixed;
@@ -188,6 +205,14 @@ body{
   height:32px;
 }
 
+.whatsapp-button:hover{
+  transform:scale(1.06);
+}
+
+/* =========================
+   ENQUIRY MODAL
+========================= */
+
 .enquiry-modal-overlay,
 .success-modal-overlay{
   position:fixed;
@@ -217,20 +242,6 @@ body{
   justify-content:center;
   overflow:hidden;
   animation:modalRise 0.4s ease-out both;
-}
-
-.success-modal{
-  position:relative;
-  width:min(100%,560px);
-  margin:auto 16px;
-  border-radius:28px;
-  background:rgba(16,16,16,0.92);
-  border:1px solid rgba(255,255,255,0.08);
-  box-shadow:0 25px 80px rgba(0,0,0,0.45);
-  color:white;
-  padding:42px 34px 34px;
-  text-align:center;
-  animation:modalRise 0.35s ease-out both;
 }
 
 .enquiry-modal-content{
@@ -292,14 +303,6 @@ body{
   text-align:left;
 }
 
-.success-title{
-  margin:12px 0 10px;
-  font-size:clamp(2rem,4vw,2.6rem);
-  font-family:Georgia,"Times New Roman",serif;
-  font-weight:500;
-  text-align:center;
-}
-
 .modal-subtitle{
   margin:0 0 20px;
   color:rgba(255,255,255,0.75);
@@ -308,13 +311,9 @@ body{
   text-align:left;
 }
 
-.success-text{
-  margin:0 0 24px;
-  color:rgba(255,255,255,0.75);
-  line-height:1.7;
-  font-size:1rem;
-  text-align:center;
-}
+/* =========================
+   FORM
+========================= */
 
 .enquiry-form{
   display:flex;
@@ -386,6 +385,40 @@ body{
   cursor:not-allowed;
 }
 
+/* =========================
+   SUCCESS MODAL
+========================= */
+
+.success-modal{
+  position:relative;
+  width:min(100%,560px);
+  margin:auto 16px;
+  border-radius:28px;
+  background:rgba(16,16,16,0.92);
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 25px 80px rgba(0,0,0,0.45);
+  color:white;
+  padding:42px 34px 34px;
+  text-align:center;
+  animation:modalRise 0.35s ease-out both;
+}
+
+.success-title{
+  margin:12px 0 10px;
+  font-size:clamp(2rem,4vw,2.6rem);
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+  text-align:center;
+}
+
+.success-text{
+  margin:0 0 24px;
+  color:rgba(255,255,255,0.75);
+  line-height:1.7;
+  font-size:1rem;
+  text-align:center;
+}
+
 .success-icon-wrap{
   width:86px;
   height:86px;
@@ -398,9 +431,9 @@ body{
   justify-content:center;
 }
 
-.whatsapp-button:hover{
-  transform:scale(1.06);
-}
+/* =========================
+   ANIMATIONS
+========================= */
 
 @keyframes whatsappPulse{
   0%{
@@ -470,6 +503,10 @@ body{
   }
 }
 
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width:1024px){
   .hero-center{
     width:min(100%, 860px);
@@ -490,6 +527,10 @@ body{
     max-width:620px;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width:768px){
   body{
@@ -544,10 +585,10 @@ body{
   .enquiry-vertical-button{
     font-size:11px;
     padding:14px 8px;
-    min-height:118px;
-    min-width:40px;
+    min-height:128px;
+    min-width:44px;
     border-radius:14px 0 0 14px;
-    letter-spacing:0.04em;
+    letter-spacing:0.03em;
   }
 
   .sound-button{
@@ -575,13 +616,13 @@ body{
     overflow-y:auto;
     overflow-x:hidden;
     -webkit-overflow-scrolling:touch;
-    align-items:flex-start;
-    justify-content:flex-start;
+    display:block;
   }
 
   .enquiry-modal-content{
     width:100%;
     max-width:100%;
+    margin:0 auto;
     padding:72px 18px 24px;
   }
 
@@ -592,11 +633,9 @@ body{
   }
 
   .modal-close-button{
-    position:sticky;
+    position:fixed;
     top:12px;
-    right:auto;
-    margin-left:auto;
-    margin-right:12px;
+    right:12px;
     width:42px;
     height:42px;
   }
@@ -656,6 +695,10 @@ body{
   }
 }
 
+/* =========================
+   SMALL MOBILE
+========================= */
+
 @media (max-width:480px){
   .hero-center{
     padding:18px 14px 104px;
@@ -682,8 +725,8 @@ body{
   .enquiry-vertical-button{
     font-size:10px;
     padding:12px 7px;
-    min-height:108px;
-    min-width:36px;
+    min-height:116px;
+    min-width:40px;
   }
 
   .sound-button{
