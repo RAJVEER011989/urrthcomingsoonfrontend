@@ -142,13 +142,13 @@ body{
 .enquiry-vertical-button{
   writing-mode:vertical-rl;
   transform:rotate(180deg);
-  background:#d8925d;
+  background:linear-gradient(180deg,#e0a06a,#c6844e);
   color:#fff;
   border:none;
-  border-radius:18px 0 0 18px;
+  border-radius:20px 0 0 20px;
   padding:18px 10px;
-  width:52px;
-  min-height:150px;
+  width:56px;
+  min-height:160px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -159,7 +159,16 @@ body{
   white-space:nowrap;
   overflow:visible;
   cursor:pointer;
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  box-shadow:
+    -4px 8px 25px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+  transition:all 0.3s ease;
+  animation:enquiryGlow 5s ease-in-out infinite;
+}
+
+.enquiry-vertical-button:hover{
+  background:linear-gradient(180deg,#e6a770,#cf8e57);
+  transform:rotate(180deg) translateX(-2px);
 }
 
 /* =========================
@@ -437,6 +446,24 @@ body{
    ANIMATIONS
 ========================= */
 
+@keyframes enquiryGlow{
+  0%{
+    box-shadow:
+      -4px 8px 25px rgba(0,0,0,0.35),
+      inset 0 1px 0 rgba(255,255,255,0.25);
+  }
+  50%{
+    box-shadow:
+      -6px 10px 35px rgba(214,164,108,0.65),
+      inset 0 1px 0 rgba(255,255,255,0.25);
+  }
+  100%{
+    box-shadow:
+      -4px 8px 25px rgba(0,0,0,0.35),
+      inset 0 1px 0 rgba(255,255,255,0.25);
+  }
+}
+
 @keyframes whatsappPulse{
   0%{
     opacity:0.7;
@@ -580,17 +607,18 @@ body{
   }
 
   .right-floating-bar{
+    right:-6px;
     top:50%;
     transform:translateY(-50%);
   }
 
   .enquiry-vertical-button{
-    width:46px;
-    min-height:132px;
+    width:48px;
+    min-height:135px;
     padding:14px 8px;
     font-size:13px;
     line-height:1.15;
-    border-radius:14px 0 0 14px;
+    border-radius:16px 0 0 16px;
   }
 
   .sound-button{
@@ -703,7 +731,7 @@ body{
 
 @media (max-width:480px){
   .hero-center{
-    padding:18px 14px 104px;
+    padding:18px 65px 104px 14px;
   }
 
   .coming-title{
