@@ -88,7 +88,7 @@ export default function App() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/send-enquiry", {
+      const response = await fetch("https://api.tuliptech.in/send-enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
