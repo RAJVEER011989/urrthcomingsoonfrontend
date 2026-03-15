@@ -118,7 +118,7 @@ export default function App() {
       <BackgroundSlideshow slides={slides} />
       <div className="hero-overlay" />
 
-      <audio ref={audioRef} loop src="/coming-soon.mp3" />
+      <audio ref={audioRef} loop src={`${import.meta.env.BASE_URL}coming-soon.mp3`} />
 
       <section className="hero-center">
         <h1 className="coming-title">COMING SOON</h1>
@@ -165,7 +165,11 @@ export default function App() {
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
       >
-        <img src="/whatsapp.svg" alt="WhatsApp" className="whatsapp-icon" />
+        <img
+  src={`${import.meta.env.BASE_URL}whatsapp.svg`}
+  alt="WhatsApp"
+  className="whatsapp-icon"
+/>
       </a>
 
       {showEnquiryModal && (
