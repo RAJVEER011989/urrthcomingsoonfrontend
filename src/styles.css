@@ -8,17 +8,19 @@
 
 html,body,#root{
   margin:0;
-  height:100%;
+  min-height:100%;
 }
 
 body{
   background:black;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 
 .hero-page{
   position:relative;
   min-height:100vh;
+  min-height:100dvh;
   width:100%;
   color:white;
   display:flex;
@@ -69,7 +71,7 @@ body{
 
 .hero-center{
   width:min(100%,1000px);
-  padding:24px 32px;
+  padding:24px 32px 100px;
   margin:0 auto;
 }
 
@@ -118,31 +120,37 @@ body{
 }
 
 .right-floating-bar{
-  position:absolute;
+  position:fixed;
   right:0;
   top:50%;
   transform:translateY(-50%);
-  z-index:10;
+  z-index:20;
 }
 
 .enquiry-vertical-button{
   writing-mode:vertical-rl;
+  text-orientation:mixed;
   transform:rotate(180deg);
   background:#b67d45;
   color:white;
   border:none;
   border-radius:18px 0 0 18px;
   padding:20px 12px;
+  min-height:150px;
+  min-width:52px;
   font-size:15px;
-  font-weight:500;
+  font-weight:600;
+  letter-spacing:0.08em;
+  line-height:1;
   cursor:pointer;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  white-space:nowrap;
 }
 
 .sound-button{
-  position:absolute;
-  left:30px;
-  bottom:30px;
+  position:fixed;
+  left:20px;
+  bottom:20px;
   width:60px;
   height:60px;
   border-radius:50%;
@@ -154,13 +162,13 @@ body{
   justify-content:center;
   cursor:pointer;
   box-shadow:0 8px 20px rgba(0,0,0,0.35);
-  z-index:10;
+  z-index:20;
 }
 
 .whatsapp-button{
-  position:absolute;
-  right:30px;
-  bottom:30px;
+  position:fixed;
+  right:20px;
+  bottom:20px;
   width:66px;
   height:66px;
   border-radius:50%;
@@ -172,7 +180,7 @@ body{
   text-decoration:none;
   box-shadow:0 10px 25px rgba(0,0,0,0.3);
   animation:whatsappPulse 2.4s ease-in-out infinite;
-  z-index:10;
+  z-index:20;
 }
 
 .whatsapp-icon{
@@ -459,11 +467,10 @@ body{
   }
 }
 
-/* Laptop / tablet */
-@media (max-width: 1024px){
+@media (max-width:1024px){
   .hero-center{
     width:min(100%, 860px);
-    padding:24px 22px;
+    padding:24px 22px 96px;
   }
 
   .hero-logo-image{
@@ -481,13 +488,15 @@ body{
   }
 }
 
-/* Mobile */
-@media (max-width: 768px){
+@media (max-width:768px){
   body{
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
   }
 
   .hero-page{
+    min-height:100vh;
+    min-height:100dvh;
     align-items:center;
     justify-content:center;
   }
@@ -495,64 +504,66 @@ body{
   .hero-center{
     width:100%;
     max-width:100%;
-    padding:20px 18px 96px;
+    padding:20px 18px 110px;
   }
 
   .coming-title{
     font-size:clamp(2rem, 11vw, 3.4rem);
-    letter-spacing:0.08em;
+    letter-spacing:0.06em;
     line-height:1.12;
   }
 
   .hero-logo-image{
-    width:190px;
+    width:180px;
     max-width:78%;
-    margin-top:20px;
+    margin-top:18px;
   }
 
   .hero-description{
-    margin:20px auto 0;
-    font-size:0.98rem;
-    line-height:1.65;
-    max-width:100%;
-  }
-
-  .hero-description-small{
-    margin:12px auto 0;
-    font-size:0.88rem;
+    margin:18px auto 0;
+    font-size:0.95rem;
     line-height:1.6;
     max-width:100%;
   }
 
+  .hero-description-small{
+    margin:10px auto 0;
+    font-size:0.84rem;
+    line-height:1.55;
+    max-width:100%;
+  }
+
   .right-floating-bar{
-    right:0;
     top:50%;
     transform:translateY(-50%);
   }
 
   .enquiry-vertical-button{
-    font-size:12px;
-    padding:14px 9px;
+    font-size:11px;
+    padding:14px 8px;
+    min-height:118px;
+    min-width:40px;
     border-radius:14px 0 0 14px;
+    letter-spacing:0.04em;
   }
 
   .sound-button{
-    left:14px;
-    bottom:14px;
-    width:54px;
-    height:54px;
+    left:12px;
+    bottom:12px;
+    width:48px;
+    height:48px;
   }
 
   .whatsapp-button{
-    right:14px;
-    bottom:14px;
-    width:58px;
-    height:58px;
+    right:12px;
+    bottom:12px;
+    width:52px;
+    height:52px;
   }
 
   .whatsapp-icon{
-    width:28px;
-    height:28px;
+    width:24px;
+    height:24px;
   }
 
   .enquiry-modal-content{
@@ -628,47 +639,48 @@ body{
   }
 }
 
-/* Small phones */
-@media (max-width: 480px){
+@media (max-width:480px){
   .hero-center{
-    padding:18px 14px 92px;
+    padding:18px 14px 104px;
   }
 
   .coming-title{
     font-size:clamp(1.8rem, 12vw, 2.9rem);
-    letter-spacing:0.06em;
+    letter-spacing:0.05em;
   }
 
   .hero-logo-image{
-    width:165px;
+    width:160px;
     max-width:76%;
   }
 
   .hero-description{
-    font-size:0.92rem;
+    font-size:0.9rem;
   }
 
   .hero-description-small{
-    font-size:0.82rem;
+    font-size:0.8rem;
   }
 
   .enquiry-vertical-button{
-    font-size:11px;
-    padding:12px 8px;
+    font-size:10px;
+    padding:12px 7px;
+    min-height:108px;
+    min-width:36px;
   }
 
   .sound-button{
-    width:50px;
-    height:50px;
+    width:44px;
+    height:44px;
   }
 
   .whatsapp-button{
-    width:54px;
-    height:54px;
+    width:48px;
+    height:48px;
   }
 
   .whatsapp-icon{
-    width:26px;
-    height:26px;
+    width:22px;
+    height:22px;
   }
 }
