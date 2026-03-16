@@ -150,7 +150,7 @@ export default function App() {
   </p>
 
   <p className="hero-description-small">
-          Featuring <strong>70+ premium rooms</strong>, curated ambience, and
+          Featuring <span className="highlight-rooms"><strong>70+ premium rooms</strong></span>, curated ambience, and
           beautiful spaces designed for gatherings, celebrations, and memorable
           moments.
   </p>
