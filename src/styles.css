@@ -588,6 +588,11 @@ body{
     font-size:0.98rem;
     max-width:620px;
   }
+
+   .enquiry-modal-content{
+  padding:72px 18px 60px;
+  transform:translateX(0);
+}
 }
 
 /* =========================
@@ -698,11 +703,7 @@ body{
   }
 
   .enquiry-modal-content{
-  width:min(100%,820px);
-  max-width:820px;
-  margin:0 auto;
   padding:72px 18px 60px;
-  text-align:left;
   transform:translateX(0);
 }
 
@@ -727,11 +728,7 @@ body{
   }
 
   .enquiry-modal-content{
-  width:min(100%,820px);
-  max-width:820px;
-  margin:0 auto;
   padding:72px 18px 60px;
-  text-align:left;
   transform:translateX(0);
 }
 
