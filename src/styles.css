@@ -702,10 +702,106 @@ body{
     height:24px;
   }
 
+  .enquiry-modal{
+    min-height:100vh;
+    min-height:100dvh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
+    display:block;
+    padding:0;
+  }
+
   .enquiry-modal-content{
-  padding:72px 18px 60px;
-  transform:translateX(0);
-}
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+    padding:24px 18px 34px;
+    text-align:left;
+  }
+
+  .enquiry-logo{
+    width:78px;
+    max-width:40%;
+    margin:0 auto 14px;
+    display:block;
+  }
+
+  .modal-close-button{
+    position:fixed;
+    top:14px;
+    right:14px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.12);
+    z-index:50;
+  }
+
+  .modal-eyebrow{
+    text-align:left;
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    margin-top:28px;
+  }
+
+  .modal-title{
+    font-size:2rem;
+    line-height:1.08;
+    margin:8px 0 10px;
+    max-width:280px;
+  }
+
+  .modal-subtitle{
+    font-size:0.98rem;
+    line-height:1.6;
+    margin:0 0 22px;
+    max-width:100%;
+  }
+
+  .enquiry-form{
+    gap:16px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .form-group{
+    gap:8px;
+  }
+
+  .form-group label{
+    font-size:0.95rem;
+    font-weight:600;
+  }
+
+  .form-group input,
+  .form-group textarea{
+    width:100%;
+    font-size:16px;
+    padding:15px 16px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(255,255,255,0.14);
+  }
+
+  .form-group textarea{
+    min-height:180px;
+    resize:none;
+  }
+
+  .send-button{
+    width:100%;
+    margin-top:6px;
+    margin-bottom:12px;
+    padding:16px 20px;
+    border-radius:16px;
+    font-size:16px;
+    font-weight:700;
+    align-self:stretch;
+  }
 
 }
 
@@ -727,10 +823,34 @@ body{
     width:calc(100% - 54px);
   }
 
-  .enquiry-modal-content{
-  padding:72px 18px 60px;
-  transform:translateX(0);
-}
+ .enquiry-modal-content{
+    padding:22px 14px 30px;
+  }
+
+  .modal-title{
+    font-size:1.75rem;
+    max-width:240px;
+  }
+
+  .modal-subtitle{
+    font-size:0.92rem;
+  }
+
+  .form-group input,
+  .form-group textarea{
+    padding:14px 14px;
+    border-radius:14px;
+  }
+
+  .form-group textarea{
+    min-height:165px;
+  }
+
+  .send-button{
+    padding:15px 18px;
+    border-radius:14px;
+    font-size:15px;
+  }
 
   .coming-title{
     font-size:clamp(1.8rem, 12vw, 2.9rem);
@@ -775,19 +895,6 @@ body{
     height:22px;
   }
 
-  @media (max-width:768px){
-
-.send-button{
-  width:100%;
-  margin-top:16px;
-  margin-bottom:16px;
-  padding:16px 24px;
-  font-size:16px;
-  border-radius:14px;
-  background:linear-gradient(135deg,#d6a96c,#b67d45);
-  box-shadow:0 8px 20px rgba(0,0,0,0.25);
-}
-
-}
+  
 
 }
