@@ -408,12 +408,12 @@ body{
 
 .send-button,
 .success-button{
-  min-width:160px;
+  min-width:100px;
   border:none;
-  border-radius:999px;
+  border-radius:500px;
   background:#b67d45;
   color:white;
-  padding:14px 28px;
+  padding:8px 20px;
   font-size:1rem;
   font-weight:600;
   cursor:pointer;
