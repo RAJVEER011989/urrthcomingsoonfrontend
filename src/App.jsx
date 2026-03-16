@@ -29,6 +29,21 @@ export default function App() {
     }
   }, []);
 
+  useEffect(() => {
+  if (showEnquiryModal || showSuccessModal) {
+    document.body.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
+  } else {
+    document.body.style.overflow = "auto";
+    document.body.style.touchAction = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+    document.body.style.touchAction = "auto";
+  };
+}, [showEnquiryModal, showSuccessModal]);
+
   const toggleMusic = async () => {
     if (!audioRef.current) return;
 
@@ -120,24 +135,26 @@ export default function App() {
 
       <audio ref={audioRef} loop src={`${import.meta.env.BASE_URL}coming-soon.mp3`} />
 
-      <section className="hero-center">
-        <h1 className="coming-title">COMING SOON</h1>
+    <section className="hero-center">
+  <h1 className="coming-title">COMING SOON</h1>
 
-        <img src={logo} alt="URRTH" className="hero-logo-image" />
+  <img src={logo} alt="URRTH" className="hero-logo-image" />
 
-        <p className="hero-description">
+  <div className="hero-divider" />
+
+  <p className="hero-description">
           A new destination for refined hospitality is arriving soon. URRTH is
           being thoughtfully crafted as a place where luxury stays, meaningful
           celebrations, and unforgettable experiences come together under one
           elegant setting.
-        </p>
+  </p>
 
-        <p className="hero-description-small">
+  <p className="hero-description-small">
           Featuring <strong>70+ premium rooms</strong>, curated ambience, and
           beautiful spaces designed for gatherings, celebrations, and memorable
           moments.
-        </p>
-      </section>
+  </p>
+</section>
 
       <div className="right-floating-bar">
         <button
