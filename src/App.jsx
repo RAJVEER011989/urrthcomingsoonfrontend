@@ -64,7 +64,7 @@ export default function App() {
     "Hello URRTH, I would like to enquire about your upcoming hotel, room bookings, availability, and opening details. Please share more information."
   );
 
-  const whatsappLink = `https://wa.me/919479282528?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/917222902226?text=${whatsappMessage}`;
 
   const openEnquiryModal = () => {
     setShowEnquiryModal(true);
