@@ -697,6 +697,15 @@ body{
     height:24px;
   }
 
+  .enquiry-modal-content{
+  width:min(100%,820px);
+  max-width:820px;
+  margin:0 auto;
+  padding:72px 18px 60px;
+  text-align:left;
+  transform:translateX(0);
+}
+
 }
 
 /* =========================
@@ -716,6 +725,15 @@ body{
   .hero-description-small{
     width:calc(100% - 54px);
   }
+
+  .enquiry-modal-content{
+  width:min(100%,820px);
+  max-width:820px;
+  margin:0 auto;
+  padding:72px 18px 60px;
+  text-align:left;
+  transform:translateX(0);
+}
 
   .coming-title{
     font-size:clamp(1.8rem, 12vw, 2.9rem);
