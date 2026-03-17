@@ -684,12 +684,7 @@ body{
 
   .call-button-pill{
     bottom:16px;
-    padding:9px 14px;
-    min-height:42px;
-    font-size:0.82rem;
-    max-width:calc(100vw - 132px);
-    overflow:hidden;
-    text-overflow:ellipsis;
+    left: 45%;
   }
 
   .call-icon{
