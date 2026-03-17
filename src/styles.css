@@ -159,17 +159,18 @@ body{
   justify-content:center;
   gap:10px;
 
-  padding:10px 16px;
-  min-height:46px;
+  padding:14px 22px;
+  min-height:52px;
   border-radius:999px;
 
   background:rgba(214,169,108,0.95);
   color:#ffffff;
 
   font-family:'Playfair Display', Georgia, "Times New Roman", serif;
-  font-size:0.95rem;
+  font-size:1.05rem;
+  border-radius: 999px;
   font-weight:600;
-  letter-spacing:0.03em;
+  letter-spacing:0.05em;
   line-height:1;
 
   text-decoration:none;
@@ -187,19 +188,21 @@ body{
 }
 
 .call-icon{
-  display:inline-flex;
+  display:flex;
   align-items:center;
   justify-content:center;
-  width:20px;
-  height:20px;
-  font-size:15px;
+  width:26px;
+  height:26px;
+  font-size:20px;
   line-height:1;
-  color:#ffffff;
+  color:#080808;
 }
 
 .call-text{
+  font-weight: 600;
+  font-size: 1.3rem;
   display:inline-block;
-  color:#ffffff;
+  color:#181717;
 }
 
 @keyframes callPulse{
@@ -975,22 +978,25 @@ body{
     height:22px;
   }
 
-  @media (max-width:768px){
-  .call-button-pill{
-    left:50%;
-    bottom:18px;
-    transform:translateX(-50%);
-    padding:10px 14px;
-    min-height:42px;
-    font-size:0.84rem;
-    max-width:calc(100vw - 140px);
-  }
+ @media (max-width:768px){
 
-  .call-icon{
-    font-size:14px;
-    width:18px;
-    height:18px;
-  }
+.call-button-pill{
+  padding:12px 18px;
+  min-height:48px;
+
+  font-size:0.95rem;
+}
+
+.call-icon{
+  font-size:18px;
+  width:24px;
+  height:24px;
+}
+
+.call-text{
+  font-size:0.95rem;
+}
+
 }
 
 @media (max-width:480px){
