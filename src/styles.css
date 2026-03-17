@@ -682,17 +682,6 @@ body{
     justify-content:center;
   }
 
-  .call-button-pill{
-     left:45%;
-    bottom:12px;
-  }
-
-  .call-icon{
-    width:20px;
-    height:20px;
-    font-size:15px;
-  }
-
   .hero-center{
     width:100%;
     max-width:100%;
@@ -894,11 +883,6 @@ body{
   .hero-center{
     padding:18px 14px 104px;
   }
-
-   .call-button-pill{
-     left:45%;
-    bottom:12px;
-  }
   .coming-title,
   .hero-logo-image,
   .hero-divider,
@@ -979,6 +963,33 @@ body{
     height:22px;
   }
 
-  
+  @media (max-width:768px){
+  .call-button-pill{
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    padding:10px 14px;
+    min-height:42px;
+    font-size:0.84rem;
+    max-width:calc(100vw - 140px);
+  }
+
+  .call-icon{
+    font-size:14px;
+    width:18px;
+    height:18px;
+  }
+}
+
+@media (max-width:480px){
+  .call-button-pill{
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    padding:9px 12px;
+    font-size:0.78rem;
+    max-width:calc(100vw - 128px);
+  }
+}
 
 }
