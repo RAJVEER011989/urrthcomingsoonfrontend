@@ -151,8 +151,9 @@ export default function App() {
 
   <p className="hero-description-small">
           Featuring <span className="highlight-rooms"><strong>70+ premium rooms</strong></span>, curated ambience, and
-          beautiful spaces designed for Banquets & Lawns for wedding / corporate events / weekend getaways.      
+          beautiful spaces designed for Banquets & Lawns for wedding / corporate events / weekend getaways.<br/>      
           <strong className="highlight-extra"> Experience the Extraordinary</strong>
+          
   </p>
 </section>
 
