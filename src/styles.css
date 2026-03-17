@@ -126,7 +126,7 @@ body{
   margin:32px auto 0;
   font-family:'Playfair Display', Georgia, "Times New Roman", serif;
   font-size:1.28rem;
-  line-height:1.9;
+  line-height:1.5;
   letter-spacing:0.02em;
   color:rgba(255,255,255,0.95);
   text-align:center;
@@ -139,13 +139,71 @@ body{
   margin:16px auto 0;
   font-family:'Playfair Display', Georgia, "Times New Roman", serif;
   font-size:1.05rem;
-  line-height:1.8;
+  line-height:1.5;
   color:#f1f1f1fd;
   letter-spacing:0.05em;
   text-transform:uppercase;
   text-align:center;
   animation:softFadeUp 2s ease-out both;
   animation-delay:0.7s;
+}
+
+.call-button-pill{
+  position:sticky;
+  bottom:20px;
+
+  margin:30px auto 0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  padding:12px 18px;
+  border-radius:999px;
+
+  background:rgba(214,169,108,0.95);
+  color:#ffffff;
+
+  font-family:'Playfair Display', serif;
+  font-size:1rem;
+  font-weight:600;
+  letter-spacing:0.05em;
+
+  text-decoration:none;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+  width:max-content;
+  max-width:90%;
+
+  white-space:nowrap; /* 🔥 prevents line break */
+
+  z-index:5;
+}
+
+.call-icon{
+  font-size:18px;
+  line-height:1;
+}
+
+.call-text{
+  display:inline-block;
+}
+
+@keyframes callPulse{
+  0%{
+    transform:scale(1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
+  }
+  50%{
+    transform:scale(1.05);
+    box-shadow:0 14px 35px rgba(214,169,108,0.6);
+  }
+  100%{
+    transform:scale(1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
+  }
 }
 
 .highlight-rooms{
