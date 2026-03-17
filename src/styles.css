@@ -682,6 +682,22 @@ body{
     justify-content:center;
   }
 
+  .call-button-pill{
+    bottom:16px;
+    padding:9px 14px;
+    min-height:42px;
+    font-size:0.82rem;
+    max-width:calc(100vw - 132px);
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .call-icon{
+    width:20px;
+    height:20px;
+    font-size:15px;
+  }
+
   .hero-center{
     width:100%;
     max-width:100%;
@@ -882,6 +898,12 @@ body{
 
   .hero-center{
     padding:18px 14px 104px;
+  }
+
+   .call-button-pill{
+    max-width:calc(100vw - 120px);
+    font-size:0.76rem;
+    padding:8px 12px;
   }
 
   .coming-title,
