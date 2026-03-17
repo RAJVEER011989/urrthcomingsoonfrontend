@@ -683,8 +683,8 @@ body{
   }
 
   .call-button-pill{
-    bottom:16px;
-    left: 45%;
+     left:45%;
+    bottom:12px;
   }
 
   .call-icon{
@@ -896,11 +896,9 @@ body{
   }
 
    .call-button-pill{
-    max-width:calc(100vw - 120px);
-    font-size:0.76rem;
-    padding:8px 12px;
+     left:45%;
+    bottom:12px;
   }
-
   .coming-title,
   .hero-logo-image,
   .hero-divider,
