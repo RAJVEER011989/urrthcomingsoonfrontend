@@ -150,44 +150,56 @@ body{
 
 .call-button-pill{
   position:fixed;
-  left:45%;
-  bottom:20px; /* between WhatsApp & sound */
-  
+  left:50%;
+  bottom:16px;
+  transform:translateX(-50%);
+
   display:flex;
   align-items:center;
+  justify-content:center;
   gap:10px;
 
-  padding:12px 18px;
+  padding:10px 16px;
+  min-height:46px;
   border-radius:999px;
 
-  background:linear-gradient(135deg,#d6a96c,#b67d45);
-  color:white;
+  background:rgba(214,169,108,0.95);
+  color:#ffffff;
 
-  font-family:'Playfair Display', serif;
+  font-family:'Playfair Display', Georgia, "Times New Roman", serif;
   font-size:0.95rem;
-  letter-spacing:0.04em;
+  font-weight:600;
+  letter-spacing:0.03em;
+  line-height:1;
 
   text-decoration:none;
+  white-space:nowrap;
 
-  box-shadow:0 10px 25px rgba(0,0,0,0.35);
-
+  box-shadow:0 10px 25px rgba(0,0,0,0.28);
   z-index:20;
 
-  animation:callPulse 2.5s ease-in-out infinite;
-
-  transition:0.3s ease;
+  transition:background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .call-button-pill:hover{
-  transform:scale(1.05);
+  background:rgba(224,176,117,0.98);
+  box-shadow:0 14px 30px rgba(0,0,0,0.34);
 }
 
 .call-icon{
-  font-size:18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:20px;
+  height:20px;
+  font-size:15px;
+  line-height:1;
+  color:#ffffff;
 }
 
 .call-text{
-  font-weight:600;
+  display:inline-block;
+  color:#ffffff;
 }
 
 @keyframes callPulse{
