@@ -110,7 +110,7 @@ body{
 .hero-divider{
   width:110px;
   height:1px;
-  margin:26px auto 0;
+  margin:10px auto 0;
   background:linear-gradient(
     90deg,
     rgba(214,178,122,0),
@@ -123,10 +123,10 @@ body{
 
 .hero-description{
   max-width:720px;
-  margin:32px auto 0;
+  margin:10px auto 0;
   font-family:'Playfair Display', Georgia, "Times New Roman", serif;
   font-size:1.28rem;
-  line-height:1.5;
+  line-height:1.7;
   letter-spacing:0.02em;
   color:rgba(255,255,255,0.95);
   text-align:center;
@@ -139,7 +139,7 @@ body{
   margin:16px auto 0;
   font-family:'Playfair Display', Georgia, "Times New Roman", serif;
   font-size:1.05rem;
-  line-height:1.5;
+  line-height:1.7;
   color:#f1f1f1fd;
   letter-spacing:0.05em;
   text-transform:uppercase;
@@ -149,46 +149,45 @@ body{
 }
 
 .call-button-pill{
-  position:sticky;
-  bottom:20px;
-
-  margin:30px auto 0;
-
+  position:fixed;
+  left:45%;
+  bottom:20px; /* between WhatsApp & sound */
+  
   display:flex;
   align-items:center;
-  justify-content:center;
   gap:10px;
 
   padding:12px 18px;
   border-radius:999px;
 
-  background:rgba(214,169,108,0.95);
-  color:#ffffff;
+  background:linear-gradient(135deg,#d6a96c,#b67d45);
+  color:white;
 
   font-family:'Playfair Display', serif;
-  font-size:1rem;
-  font-weight:600;
-  letter-spacing:0.05em;
+  font-size:0.95rem;
+  letter-spacing:0.04em;
 
   text-decoration:none;
 
-  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
 
-  width:max-content;
-  max-width:90%;
+  z-index:20;
 
-  white-space:nowrap; /* 🔥 prevents line break */
+  animation:callPulse 2.5s ease-in-out infinite;
 
-  z-index:5;
+  transition:0.3s ease;
+}
+
+.call-button-pill:hover{
+  transform:scale(1.05);
 }
 
 .call-icon{
   font-size:18px;
-  line-height:1;
 }
 
 .call-text{
-  display:inline-block;
+  font-weight:600;
 }
 
 @keyframes callPulse{

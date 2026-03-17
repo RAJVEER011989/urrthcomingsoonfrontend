@@ -156,14 +156,6 @@ export default function App() {
           
   </p>
 
-  <a
-  href="tel:+917222902226"
-  className="call-button-pill"
->
-  <span className="call-icon">✆</span>
-  <span className="call-text">+91 7222902226</span>
-</a>
-
 </section>
 
       <div className="right-floating-bar">
@@ -198,6 +190,14 @@ export default function App() {
   className="whatsapp-icon"
 />
       </a>
+
+      <a
+  href="tel:+917222902226"
+  className="call-button-pill"
+>
+  <span className="call-icon">✆</span>
+  <span className="call-text">+91 7222902226</span>
+</a>
 
 
       {showEnquiryModal && (
