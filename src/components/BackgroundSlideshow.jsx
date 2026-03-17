@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function BackgroundSlideshow({ slides, interval = 6000 }) {
+export default function BackgroundSlideshow({ slides, interval = 3000 }) {
 
   const [index,setIndex] = useState(0)
 

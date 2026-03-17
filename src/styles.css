@@ -55,7 +55,7 @@ body{
   opacity:0;
   transform:scale(1.18);
   transition:
-    opacity 2s ease,
+    opacity 3s ease,
     transform 10s ease;
   will-change:transform, opacity;
 }
@@ -100,7 +100,7 @@ body{
 
 .hero-logo-image{
   margin-top:28px;
-  width:320px;
+  width: 450px;
   max-width:75%;
   height:auto;
   animation:softFadeUp 2.2s ease-out both;
@@ -150,6 +150,12 @@ body{
 
 .highlight-rooms{
   font-size:1.8em;
+  color:#e6c28a;
+  letter-spacing:0.05em;
+}
+
+.highlight-extra{
+  font-size:1.05em;
   color:#e6c28a;
   letter-spacing:0.05em;
 }
@@ -582,7 +588,7 @@ body{
   }
 
   .hero-logo-image{
-    width:260px;
+    width:400px;
   }
 
   .hero-description{
@@ -649,7 +655,7 @@ body{
   }
 
   .hero-logo-image{
-    width:180px;
+    width:320px;
     max-width:78%;
     margin-top:18px;
   }
@@ -864,7 +870,7 @@ body{
   }
 
   .hero-logo-image{
-    width:160px;
+    width:250px;
     max-width:76%;
   }
 
